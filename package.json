@@ -1,0 +1,40 @@
+{
+  "name": "",
+  "version": "1.0.0",
+  "description": "",
+  "main": "main.js",
+  "directories": {
+    "doc": "docs",
+    "test": "tests"
+  },
+  "scripts": {
+    "start": "node main.js",
+    "makemigrationlocal": "knex migrate:make --env local --knexfile db/knex.js",
+    "migratelocal": "knex migrate:latest --env local --knexfile db/knex.js",
+    "migrate-dev": "knex migrate:latest --env development --knexfile db/knex.js",
+    "seed-dev": "knex seed:run --env development --knexfile db/knex.js",
+    "makemigration": "knex migrate:make --knexfile db/knex.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Reshmi singh <reshmisingh377@gmail.com>",
+  "license": "ISC",
+  "dependencies": {
+    "bcrypt": "^5.0.0",
+    "body-parser": "^1.18.3",
+    "cors": "^2.8.5",
+    "dotenv": "^7.0.0",
+    "express": "^4.16.4",
+    "express-promise-router": "^3.0.3",
+    "fs": "0.0.1-security",
+    "http": "0.0.0",
+    "knex": "^0.16.3",
+    "nodemon": "^1.19.4",
+    "objection": "^1.6.3",
+    "parse-error": "^0.2.0",
+    "passport": "^0.4.0",
+    "passport-jwt": "^4.0.0",
+    "pg": "^8.6.0",
+    "postgresql": "0.0.1",
+    "validator": "^10.11.0"
+  }
+}
